@@ -1,0 +1,127 @@
+\doxysection{Full\+\_\+\+GRASP\+\_\+\+And\+\_\+\+SOLID.\+Recipe Class Reference}
+\hypertarget{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_recipe}{}\label{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_recipe}\index{Full\_GRASP\_And\_SOLID.Recipe@{Full\_GRASP\_And\_SOLID.Recipe}}
+
+
+La clase \doxylink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_recipe}{Recipe} representa una receta que contiene un producto final y una lista de pasos. Implementa la interfaz \doxylink{interface_full___g_r_a_s_p___and___s_o_l_i_d_1_1_i_recipe_text}{IRecipe\+Text} para poder generar un texto que describa la receta.  
+
+
+Inheritance diagram for Full\+\_\+\+GRASP\+\_\+\+And\+\_\+\+SOLID.\+Recipe\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_recipe}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_recipe_a4c55e154313d4a6a11b079ffae34ecd2}{Add\+Step}} (\mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_product}{Product}} input, double quantity, \mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_equipment}{Equipment}} equipment, int time)
+\begin{DoxyCompactList}\small\item\em Agrega un nuevo paso de trabajo a la receta. Este método es parte del patrón Creator. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_recipe_a0e5d978793272795e2abf26f1437325e}{Add\+Step}} (string description, int time)
+\begin{DoxyCompactList}\small\item\em Agrega un nuevo paso de espera a la receta. Este método permite añadir pasos con solo descripción y tiempo, siguiendo los principios OCP y Creator. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_recipe_a9cd7291e6e73d0dd43226ab87ea9578d}{Remove\+Step}} (\mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step}{Base\+Step}} step)
+\begin{DoxyCompactList}\small\item\em Elimina un paso específico de la receta. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_recipe_ae268ef1c935b327644ed530b0c270857}{Get\+Text\+To\+Print}} ()
+\begin{DoxyCompactList}\small\item\em Genera un texto formateado que describe la receta, incluyendo todos los pasos y el costo de producción. Este método cumple con el principio de responsabilidad única (SRP). \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_recipe_a2cf1a9fa1b655709f0d35c0f4bd3f763}{Get\+Production\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Calcula el costo total de producción de la receta, sumando el costo de cada paso. Este método sigue el principio de Expert al delegar la responsabilidad de calcular el costo a los pasos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_full___g_r_a_s_p___and___s_o_l_i_d_1_1_i_recipe_text}{Full\+\_\+\+GRASP\+\_\+\+And\+\_\+\+SOLID.\+IRecipe\+Text}}}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_recipe_a22f0db524f34723419c8085a18d411a7}\label{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_recipe_a22f0db524f34723419c8085a18d411a7} 
+\mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_product}{Product}} {\bfseries Final\+Product}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Producto final que se obtiene al completar la receta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+La clase \doxylink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_recipe}{Recipe} representa una receta que contiene un producto final y una lista de pasos. Implementa la interfaz \doxylink{interface_full___g_r_a_s_p___and___s_o_l_i_d_1_1_i_recipe_text}{IRecipe\+Text} para poder generar un texto que describa la receta. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_recipe_a4c55e154313d4a6a11b079ffae34ecd2}\index{Full\_GRASP\_And\_SOLID.Recipe@{Full\_GRASP\_And\_SOLID.Recipe}!AddStep@{AddStep}}
+\index{AddStep@{AddStep}!Full\_GRASP\_And\_SOLID.Recipe@{Full\_GRASP\_And\_SOLID.Recipe}}
+\doxysubsubsection{\texorpdfstring{AddStep()}{AddStep()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_recipe_a4c55e154313d4a6a11b079ffae34ecd2} 
+void Full\+\_\+\+GRASP\+\_\+\+And\+\_\+\+SOLID.\+Recipe.\+Add\+Step (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_product}{Product}}}]{input}{, }\item[{double}]{quantity}{, }\item[{\mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_equipment}{Equipment}}}]{equipment}{, }\item[{int}]{time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Agrega un nuevo paso de trabajo a la receta. Este método es parte del patrón Creator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & Producto que se utilizará en el paso.\\
+\hline
+{\em quantity} & Cantidad del producto a utilizar.\\
+\hline
+{\em equipment} & Equipo necesario para realizar el paso.\\
+\hline
+{\em time} & Tiempo necesario para completar el paso.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_recipe_a0e5d978793272795e2abf26f1437325e}\index{Full\_GRASP\_And\_SOLID.Recipe@{Full\_GRASP\_And\_SOLID.Recipe}!AddStep@{AddStep}}
+\index{AddStep@{AddStep}!Full\_GRASP\_And\_SOLID.Recipe@{Full\_GRASP\_And\_SOLID.Recipe}}
+\doxysubsubsection{\texorpdfstring{AddStep()}{AddStep()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_recipe_a0e5d978793272795e2abf26f1437325e} 
+void Full\+\_\+\+GRASP\+\_\+\+And\+\_\+\+SOLID.\+Recipe.\+Add\+Step (\begin{DoxyParamCaption}\item[{string}]{description}{, }\item[{int}]{time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Agrega un nuevo paso de espera a la receta. Este método permite añadir pasos con solo descripción y tiempo, siguiendo los principios OCP y Creator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em description} & Descripción del paso de espera.\\
+\hline
+{\em time} & Tiempo de espera necesario.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_recipe_a2cf1a9fa1b655709f0d35c0f4bd3f763}\index{Full\_GRASP\_And\_SOLID.Recipe@{Full\_GRASP\_And\_SOLID.Recipe}!GetProductionCost@{GetProductionCost}}
+\index{GetProductionCost@{GetProductionCost}!Full\_GRASP\_And\_SOLID.Recipe@{Full\_GRASP\_And\_SOLID.Recipe}}
+\doxysubsubsection{\texorpdfstring{GetProductionCost()}{GetProductionCost()}}
+{\footnotesize\ttfamily \label{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_recipe_a2cf1a9fa1b655709f0d35c0f4bd3f763} 
+double Full\+\_\+\+GRASP\+\_\+\+And\+\_\+\+SOLID.\+Recipe.\+Get\+Production\+Cost (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calcula el costo total de producción de la receta, sumando el costo de cada paso. Este método sigue el principio de Expert al delegar la responsabilidad de calcular el costo a los pasos. 
+
+\begin{DoxyReturn}{Returns}
+Costo total de producción de la receta.
+\end{DoxyReturn}
+\Hypertarget{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_recipe_ae268ef1c935b327644ed530b0c270857}\index{Full\_GRASP\_And\_SOLID.Recipe@{Full\_GRASP\_And\_SOLID.Recipe}!GetTextToPrint@{GetTextToPrint}}
+\index{GetTextToPrint@{GetTextToPrint}!Full\_GRASP\_And\_SOLID.Recipe@{Full\_GRASP\_And\_SOLID.Recipe}}
+\doxysubsubsection{\texorpdfstring{GetTextToPrint()}{GetTextToPrint()}}
+{\footnotesize\ttfamily \label{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_recipe_ae268ef1c935b327644ed530b0c270857} 
+string Full\+\_\+\+GRASP\+\_\+\+And\+\_\+\+SOLID.\+Recipe.\+Get\+Text\+To\+Print (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Genera un texto formateado que describe la receta, incluyendo todos los pasos y el costo de producción. Este método cumple con el principio de responsabilidad única (SRP). 
+
+\begin{DoxyReturn}{Returns}
+Texto que describe los pasos de la receta y su costo total de producción.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_full___g_r_a_s_p___and___s_o_l_i_d_1_1_i_recipe_text_a6f65050b4be6131a134b36f5edbbc79d}{Full\+\_\+\+GRASP\+\_\+\+And\+\_\+\+SOLID.\+IRecipe\+Text}}.
+
+\Hypertarget{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_recipe_a9cd7291e6e73d0dd43226ab87ea9578d}\index{Full\_GRASP\_And\_SOLID.Recipe@{Full\_GRASP\_And\_SOLID.Recipe}!RemoveStep@{RemoveStep}}
+\index{RemoveStep@{RemoveStep}!Full\_GRASP\_And\_SOLID.Recipe@{Full\_GRASP\_And\_SOLID.Recipe}}
+\doxysubsubsection{\texorpdfstring{RemoveStep()}{RemoveStep()}}
+{\footnotesize\ttfamily \label{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_recipe_a9cd7291e6e73d0dd43226ab87ea9578d} 
+void Full\+\_\+\+GRASP\+\_\+\+And\+\_\+\+SOLID.\+Recipe.\+Remove\+Step (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step}{Base\+Step}}}]{step}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Elimina un paso específico de la receta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em step} & El paso que se desea eliminar de la receta.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Library/Recipe.\+cs\end{DoxyCompactItemize}

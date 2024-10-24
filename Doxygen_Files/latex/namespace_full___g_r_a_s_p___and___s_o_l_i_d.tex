@@ -1,0 +1,27 @@
+\doxysection{Full\+\_\+\+GRASP\+\_\+\+And\+\_\+\+SOLID Namespace Reference}
+\hypertarget{namespace_full___g_r_a_s_p___and___s_o_l_i_d}{}\label{namespace_full___g_r_a_s_p___and___s_o_l_i_d}\index{Full\_GRASP\_And\_SOLID@{Full\_GRASP\_And\_SOLID}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step}{Base\+Step}}
+\begin{DoxyCompactList}\small\item\em La clase abstracta \doxylink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step}{Base\+Step} representa un paso base en una receta. Esta clase sirve como base para pasos específicos, como \doxylink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_step}{Step} y \doxylink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_wait_step}{Wait\+Step}. Se ha agregado para cumplir con el principio OCP (Open-\/\+Closed Principle). \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_console_printer}{Console\+Printer}}
+\begin{DoxyCompactList}\small\item\em La clase \doxylink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_console_printer}{Console\+Printer} implementa la interfaz \doxylink{interface_full___g_r_a_s_p___and___s_o_l_i_d_1_1_i_printer}{IPrinter} para proporcionar funcionalidad de impresión de recetas en la consola. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_equipment}{Equipment}}
+\begin{DoxyCompactList}\small\item\em La clase \doxylink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_equipment}{Equipment} representa un equipo utilizado en la receta. Contiene la descripción del equipo y su costo por hora de uso. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_file_printer}{File\+Printer}}
+\begin{DoxyCompactList}\small\item\em La clase \doxylink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_file_printer}{File\+Printer} implementa la interfaz \doxylink{interface_full___g_r_a_s_p___and___s_o_l_i_d_1_1_i_printer}{IPrinter} para proporcionar funcionalidad de impresión de recetas en un archivo de texto. \end{DoxyCompactList}\item 
+interface \mbox{\hyperlink{interface_full___g_r_a_s_p___and___s_o_l_i_d_1_1_i_printer}{IPrinter}}
+\begin{DoxyCompactList}\small\item\em La interfaz \doxylink{interface_full___g_r_a_s_p___and___s_o_l_i_d_1_1_i_printer}{IPrinter} define un contrato para imprimir recetas. Cualquier clase que implemente esta interfaz debe proporcionar una implementación del método Print\+Recipe. \end{DoxyCompactList}\item 
+interface \mbox{\hyperlink{interface_full___g_r_a_s_p___and___s_o_l_i_d_1_1_i_recipe_text}{IRecipe\+Text}}
+\begin{DoxyCompactList}\small\item\em La interfaz \doxylink{interface_full___g_r_a_s_p___and___s_o_l_i_d_1_1_i_recipe_text}{IRecipe\+Text} define un contrato para obtener el texto a imprimir de una receta. Implementando esta interfaz, las clases pueden proporcionar una representación textual de la receta. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_product}{Product}}
+\begin{DoxyCompactList}\small\item\em La clase \doxylink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_product}{Product} representa un producto utilizado en la receta. Contiene la descripción del producto y su costo unitario. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_program}{Program}}
+\begin{DoxyCompactList}\small\item\em La clase \doxylink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_program}{Program} es el punto de entrada de la aplicación. Se encarga de inicializar los catálogos de productos y equipos, crear una receta, y imprimirla utilizando diferentes implementaciones de \doxylink{interface_full___g_r_a_s_p___and___s_o_l_i_d_1_1_i_printer}{IPrinter}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_recipe}{Recipe}}
+\begin{DoxyCompactList}\small\item\em La clase \doxylink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_recipe}{Recipe} representa una receta que contiene un producto final y una lista de pasos. Implementa la interfaz \doxylink{interface_full___g_r_a_s_p___and___s_o_l_i_d_1_1_i_recipe_text}{IRecipe\+Text} para poder generar un texto que describa la receta. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_step}{Step}}
+\begin{DoxyCompactList}\small\item\em La clase \doxylink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_step}{Step} representa un paso específico en una receta. Extiende la clase \doxylink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step}{Base\+Step} y encapsula los detalles de un paso de trabajo, incluyendo el producto, la cantidad, el equipo utilizado y el tiempo requerido. Esta clase ha sido modificada para cumplir con el principio OCP (Open-\/\+Closed Principle). \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_wait_step}{Wait\+Step}}
+\begin{DoxyCompactList}\small\item\em La clase \doxylink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_wait_step}{Wait\+Step} representa un paso de espera en una receta. Extiende la clase \doxylink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step}{Base\+Step} y encapsula la lógica de un paso que no implica un uso activo de recursos, sino simplemente un periodo de espera. Esta clase ha sido añadida para cumplir con el principio OCP (Open-\/\+Closed Principle). \end{DoxyCompactList}\end{DoxyCompactItemize}

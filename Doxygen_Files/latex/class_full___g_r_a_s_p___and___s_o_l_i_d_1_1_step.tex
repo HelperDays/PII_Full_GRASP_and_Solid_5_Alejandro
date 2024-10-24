@@ -1,0 +1,109 @@
+\doxysection{Full\+\_\+\+GRASP\+\_\+\+And\+\_\+\+SOLID.\+Step Class Reference}
+\hypertarget{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_step}{}\label{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_step}\index{Full\_GRASP\_And\_SOLID.Step@{Full\_GRASP\_And\_SOLID.Step}}
+
+
+La clase \doxylink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_step}{Step} representa un paso específico en una receta. Extiende la clase \doxylink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step}{Base\+Step} y encapsula los detalles de un paso de trabajo, incluyendo el producto, la cantidad, el equipo utilizado y el tiempo requerido. Esta clase ha sido modificada para cumplir con el principio OCP (Open-\/\+Closed Principle).  
+
+
+Inheritance diagram for Full\+\_\+\+GRASP\+\_\+\+And\+\_\+\+SOLID.\+Step\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_step}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_step_a8a2808128833cbf44f819d639258fbb5}{Step}} (\mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_product}{Product}} input, double quantity, \mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_equipment}{Equipment}} equipment, int time)
+\begin{DoxyCompactList}\small\item\em Inicializa una nueva instancia de la clase \doxylink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_step}{Step}. \end{DoxyCompactList}\item 
+override double \mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_step_ad855670c6c66ef6c1b50d216f7a39bc4}{Get\+Step\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Calcula el costo total de este paso, sumando el costo del producto y el costo del uso del equipo. Este método ha sido agregado siguiendo el principio de Expert. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_step_ab346fa15b5ef5ed2b8798ed493c7ad82}{Get\+Text\+To\+Print}} ()
+\begin{DoxyCompactList}\small\item\em Genera un texto formateado que describe el paso, incluyendo la cantidad, el producto, el equipo utilizado y el tiempo requerido. Este método cumple con el principio de responsabilidad única (SRP). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step}{Full\+\_\+\+GRASP\+\_\+\+And\+\_\+\+SOLID.\+Base\+Step}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step_ae9ec51938a1f56d745e84fa627e14ab5}{Base\+Step}} (int time)
+\begin{DoxyCompactList}\small\item\em Inicializa una nueva instancia de la clase \doxylink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step}{Base\+Step}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step_a9de779e02b7f337aa93f79265409729a}{Get\+Step\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Método abstracto que calcula el costo del paso. Este método debe ser implementado por las clases derivadas. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step_a20fded28ddcb11ba778e104e70c5648b}{Get\+Text\+To\+Print}} ()
+\begin{DoxyCompactList}\small\item\em Método abstracto que genera un texto formateado que describe el paso. Este método debe ser implementado por las clases derivadas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_step_aa49a71b61fe976535204c37caf76010c}\label{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_step_aa49a71b61fe976535204c37caf76010c} 
+\mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_product}{Product}} {\bfseries Input}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Obtiene o establece el producto que se utiliza en este paso. \end{DoxyCompactList}\item 
+\Hypertarget{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_step_a48fcd1b5ce4d0a210806d7980305a2a0}\label{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_step_a48fcd1b5ce4d0a210806d7980305a2a0} 
+double {\bfseries Quantity}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Obtiene o establece la cantidad del producto a utilizar. \end{DoxyCompactList}\item 
+\Hypertarget{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_step_a470d1c211515ca118dc95d1115441886}\label{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_step_a470d1c211515ca118dc95d1115441886} 
+\mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_equipment}{Equipment}} {\bfseries Equipment}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Obtiene o establece el equipo necesario para este paso. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step}{Full\+\_\+\+GRASP\+\_\+\+And\+\_\+\+SOLID.\+Base\+Step}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries Time}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Obtiene o establece el tiempo requerido para este paso. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+La clase \doxylink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_step}{Step} representa un paso específico en una receta. Extiende la clase \doxylink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step}{Base\+Step} y encapsula los detalles de un paso de trabajo, incluyendo el producto, la cantidad, el equipo utilizado y el tiempo requerido. Esta clase ha sido modificada para cumplir con el principio OCP (Open-\/\+Closed Principle). 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_step_a8a2808128833cbf44f819d639258fbb5}\index{Full\_GRASP\_And\_SOLID.Step@{Full\_GRASP\_And\_SOLID.Step}!Step@{Step}}
+\index{Step@{Step}!Full\_GRASP\_And\_SOLID.Step@{Full\_GRASP\_And\_SOLID.Step}}
+\doxysubsubsection{\texorpdfstring{Step()}{Step()}}
+{\footnotesize\ttfamily \label{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_step_a8a2808128833cbf44f819d639258fbb5} 
+Full\+\_\+\+GRASP\+\_\+\+And\+\_\+\+SOLID.\+Step.\+Step (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_product}{Product}}}]{input}{, }\item[{double}]{quantity}{, }\item[{\mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_equipment}{Equipment}}}]{equipment}{, }\item[{int}]{time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicializa una nueva instancia de la clase \doxylink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_step}{Step}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & El producto utilizado en el paso.\\
+\hline
+{\em quantity} & La cantidad del producto a utilizar.\\
+\hline
+{\em equipment} & El equipo necesario para el paso.\\
+\hline
+{\em time} & El tiempo requerido para completar el paso.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_step_ad855670c6c66ef6c1b50d216f7a39bc4}\index{Full\_GRASP\_And\_SOLID.Step@{Full\_GRASP\_And\_SOLID.Step}!GetStepCost@{GetStepCost}}
+\index{GetStepCost@{GetStepCost}!Full\_GRASP\_And\_SOLID.Step@{Full\_GRASP\_And\_SOLID.Step}}
+\doxysubsubsection{\texorpdfstring{GetStepCost()}{GetStepCost()}}
+{\footnotesize\ttfamily \label{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_step_ad855670c6c66ef6c1b50d216f7a39bc4} 
+override double Full\+\_\+\+GRASP\+\_\+\+And\+\_\+\+SOLID.\+Step.\+Get\+Step\+Cost (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calcula el costo total de este paso, sumando el costo del producto y el costo del uso del equipo. Este método ha sido agregado siguiendo el principio de Expert. 
+
+\begin{DoxyReturn}{Returns}
+Costo total del paso.
+\end{DoxyReturn}
+\Hypertarget{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_step_ab346fa15b5ef5ed2b8798ed493c7ad82}\index{Full\_GRASP\_And\_SOLID.Step@{Full\_GRASP\_And\_SOLID.Step}!GetTextToPrint@{GetTextToPrint}}
+\index{GetTextToPrint@{GetTextToPrint}!Full\_GRASP\_And\_SOLID.Step@{Full\_GRASP\_And\_SOLID.Step}}
+\doxysubsubsection{\texorpdfstring{GetTextToPrint()}{GetTextToPrint()}}
+{\footnotesize\ttfamily \label{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_step_ab346fa15b5ef5ed2b8798ed493c7ad82} 
+override string Full\+\_\+\+GRASP\+\_\+\+And\+\_\+\+SOLID.\+Step.\+Get\+Text\+To\+Print (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Genera un texto formateado que describe el paso, incluyendo la cantidad, el producto, el equipo utilizado y el tiempo requerido. Este método cumple con el principio de responsabilidad única (SRP). 
+
+\begin{DoxyReturn}{Returns}
+Texto que representa el paso de la receta.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Library/Step.\+cs\end{DoxyCompactItemize}

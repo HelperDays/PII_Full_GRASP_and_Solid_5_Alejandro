@@ -1,0 +1,99 @@
+\doxysection{Full\+\_\+\+GRASP\+\_\+\+And\+\_\+\+SOLID.\+Wait\+Step Class Reference}
+\hypertarget{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_wait_step}{}\label{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_wait_step}\index{Full\_GRASP\_And\_SOLID.WaitStep@{Full\_GRASP\_And\_SOLID.WaitStep}}
+
+
+La clase \doxylink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_wait_step}{Wait\+Step} representa un paso de espera en una receta. Extiende la clase \doxylink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step}{Base\+Step} y encapsula la lógica de un paso que no implica un uso activo de recursos, sino simplemente un periodo de espera. Esta clase ha sido añadida para cumplir con el principio OCP (Open-\/\+Closed Principle).  
+
+
+Inheritance diagram for Full\+\_\+\+GRASP\+\_\+\+And\+\_\+\+SOLID.\+Wait\+Step\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_wait_step}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_wait_step_a0f71ee6882b97e6ab5e8a7dda4b56363}{Wait\+Step}} (string description, int time)
+\begin{DoxyCompactList}\small\item\em Inicializa una nueva instancia de la clase \doxylink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_wait_step}{Wait\+Step}. \end{DoxyCompactList}\item 
+override double \mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_wait_step_ad9d93aa3b15d16a155a8951e27033aa1}{Get\+Step\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Calcula el costo del paso de espera. En este caso, el costo es igual al tiempo de espera, ya que no se incurre en costos adicionales. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_wait_step_aa6098bfbc9a60e537031c7331502e0b8}{Get\+Text\+To\+Print}} ()
+\begin{DoxyCompactList}\small\item\em Genera un texto formateado que describe el paso de espera, incluyendo la descripción y el tiempo de espera. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step}{Full\+\_\+\+GRASP\+\_\+\+And\+\_\+\+SOLID.\+Base\+Step}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step_ae9ec51938a1f56d745e84fa627e14ab5}{Base\+Step}} (int time)
+\begin{DoxyCompactList}\small\item\em Inicializa una nueva instancia de la clase \doxylink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step}{Base\+Step}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step_a9de779e02b7f337aa93f79265409729a}{Get\+Step\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Método abstracto que calcula el costo del paso. Este método debe ser implementado por las clases derivadas. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step_a20fded28ddcb11ba778e104e70c5648b}{Get\+Text\+To\+Print}} ()
+\begin{DoxyCompactList}\small\item\em Método abstracto que genera un texto formateado que describe el paso. Este método debe ser implementado por las clases derivadas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_wait_step_a11eafde14f1adcb8598c81e204db88d2}\label{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_wait_step_a11eafde14f1adcb8598c81e204db88d2} 
+string {\bfseries Description}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Obtiene o establece la descripción del paso de espera. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step}{Full\+\_\+\+GRASP\+\_\+\+And\+\_\+\+SOLID.\+Base\+Step}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries Time}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Obtiene o establece el tiempo requerido para este paso. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+La clase \doxylink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_wait_step}{Wait\+Step} representa un paso de espera en una receta. Extiende la clase \doxylink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step}{Base\+Step} y encapsula la lógica de un paso que no implica un uso activo de recursos, sino simplemente un periodo de espera. Esta clase ha sido añadida para cumplir con el principio OCP (Open-\/\+Closed Principle). 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_wait_step_a0f71ee6882b97e6ab5e8a7dda4b56363}\index{Full\_GRASP\_And\_SOLID.WaitStep@{Full\_GRASP\_And\_SOLID.WaitStep}!WaitStep@{WaitStep}}
+\index{WaitStep@{WaitStep}!Full\_GRASP\_And\_SOLID.WaitStep@{Full\_GRASP\_And\_SOLID.WaitStep}}
+\doxysubsubsection{\texorpdfstring{WaitStep()}{WaitStep()}}
+{\footnotesize\ttfamily \label{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_wait_step_a0f71ee6882b97e6ab5e8a7dda4b56363} 
+Full\+\_\+\+GRASP\+\_\+\+And\+\_\+\+SOLID.\+Wait\+Step.\+Wait\+Step (\begin{DoxyParamCaption}\item[{string}]{description}{, }\item[{int}]{time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicializa una nueva instancia de la clase \doxylink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_wait_step}{Wait\+Step}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em description} & Descripción del paso de espera.\\
+\hline
+{\em time} & Tiempo de espera necesario.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_wait_step_ad9d93aa3b15d16a155a8951e27033aa1}\index{Full\_GRASP\_And\_SOLID.WaitStep@{Full\_GRASP\_And\_SOLID.WaitStep}!GetStepCost@{GetStepCost}}
+\index{GetStepCost@{GetStepCost}!Full\_GRASP\_And\_SOLID.WaitStep@{Full\_GRASP\_And\_SOLID.WaitStep}}
+\doxysubsubsection{\texorpdfstring{GetStepCost()}{GetStepCost()}}
+{\footnotesize\ttfamily \label{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_wait_step_ad9d93aa3b15d16a155a8951e27033aa1} 
+override double Full\+\_\+\+GRASP\+\_\+\+And\+\_\+\+SOLID.\+Wait\+Step.\+Get\+Step\+Cost (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calcula el costo del paso de espera. En este caso, el costo es igual al tiempo de espera, ya que no se incurre en costos adicionales. 
+
+\begin{DoxyReturn}{Returns}
+Costo del paso de espera.
+\end{DoxyReturn}
+\Hypertarget{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_wait_step_aa6098bfbc9a60e537031c7331502e0b8}\index{Full\_GRASP\_And\_SOLID.WaitStep@{Full\_GRASP\_And\_SOLID.WaitStep}!GetTextToPrint@{GetTextToPrint}}
+\index{GetTextToPrint@{GetTextToPrint}!Full\_GRASP\_And\_SOLID.WaitStep@{Full\_GRASP\_And\_SOLID.WaitStep}}
+\doxysubsubsection{\texorpdfstring{GetTextToPrint()}{GetTextToPrint()}}
+{\footnotesize\ttfamily \label{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_wait_step_aa6098bfbc9a60e537031c7331502e0b8} 
+override string Full\+\_\+\+GRASP\+\_\+\+And\+\_\+\+SOLID.\+Wait\+Step.\+Get\+Text\+To\+Print (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Genera un texto formateado que describe el paso de espera, incluyendo la descripción y el tiempo de espera. 
+
+\begin{DoxyReturn}{Returns}
+Texto que representa el paso de espera.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Library/Wait\+Step.\+cs\end{DoxyCompactItemize}

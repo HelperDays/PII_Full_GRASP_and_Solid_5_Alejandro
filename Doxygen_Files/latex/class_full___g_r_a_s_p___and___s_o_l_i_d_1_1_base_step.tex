@@ -1,0 +1,83 @@
+\doxysection{Full\+\_\+\+GRASP\+\_\+\+And\+\_\+\+SOLID.\+Base\+Step Class Reference}
+\hypertarget{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step}{}\label{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step}\index{Full\_GRASP\_And\_SOLID.BaseStep@{Full\_GRASP\_And\_SOLID.BaseStep}}
+
+
+La clase abstracta \doxylink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step}{Base\+Step} representa un paso base en una receta. Esta clase sirve como base para pasos específicos, como \doxylink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_step}{Step} y \doxylink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_wait_step}{Wait\+Step}. Se ha agregado para cumplir con el principio OCP (Open-\/\+Closed Principle).  
+
+
+Inheritance diagram for Full\+\_\+\+GRASP\+\_\+\+And\+\_\+\+SOLID.\+Base\+Step\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step_ae9ec51938a1f56d745e84fa627e14ab5}{Base\+Step}} (int time)
+\begin{DoxyCompactList}\small\item\em Inicializa una nueva instancia de la clase \doxylink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step}{Base\+Step}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step_a9de779e02b7f337aa93f79265409729a}{Get\+Step\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Método abstracto que calcula el costo del paso. Este método debe ser implementado por las clases derivadas. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step_a20fded28ddcb11ba778e104e70c5648b}{Get\+Text\+To\+Print}} ()
+\begin{DoxyCompactList}\small\item\em Método abstracto que genera un texto formateado que describe el paso. Este método debe ser implementado por las clases derivadas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step_aded3527105c04a8236c7c57102e0ae73}\label{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step_aded3527105c04a8236c7c57102e0ae73} 
+int {\bfseries Time}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Obtiene o establece el tiempo requerido para este paso. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+La clase abstracta \doxylink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step}{Base\+Step} representa un paso base en una receta. Esta clase sirve como base para pasos específicos, como \doxylink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_step}{Step} y \doxylink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_wait_step}{Wait\+Step}. Se ha agregado para cumplir con el principio OCP (Open-\/\+Closed Principle). 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step_ae9ec51938a1f56d745e84fa627e14ab5}\index{Full\_GRASP\_And\_SOLID.BaseStep@{Full\_GRASP\_And\_SOLID.BaseStep}!BaseStep@{BaseStep}}
+\index{BaseStep@{BaseStep}!Full\_GRASP\_And\_SOLID.BaseStep@{Full\_GRASP\_And\_SOLID.BaseStep}}
+\doxysubsubsection{\texorpdfstring{BaseStep()}{BaseStep()}}
+{\footnotesize\ttfamily \label{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step_ae9ec51938a1f56d745e84fa627e14ab5} 
+Full\+\_\+\+GRASP\+\_\+\+And\+\_\+\+SOLID.\+Base\+Step.\+Base\+Step (\begin{DoxyParamCaption}\item[{int}]{time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicializa una nueva instancia de la clase \doxylink{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step}{Base\+Step}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & Tiempo requerido para completar este paso.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step_a9de779e02b7f337aa93f79265409729a}\index{Full\_GRASP\_And\_SOLID.BaseStep@{Full\_GRASP\_And\_SOLID.BaseStep}!GetStepCost@{GetStepCost}}
+\index{GetStepCost@{GetStepCost}!Full\_GRASP\_And\_SOLID.BaseStep@{Full\_GRASP\_And\_SOLID.BaseStep}}
+\doxysubsubsection{\texorpdfstring{GetStepCost()}{GetStepCost()}}
+{\footnotesize\ttfamily \label{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step_a9de779e02b7f337aa93f79265409729a} 
+double Full\+\_\+\+GRASP\+\_\+\+And\+\_\+\+SOLID.\+Base\+Step.\+Get\+Step\+Cost (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Método abstracto que calcula el costo del paso. Este método debe ser implementado por las clases derivadas. 
+
+\begin{DoxyReturn}{Returns}
+Costo del paso.
+\end{DoxyReturn}
+\Hypertarget{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step_a20fded28ddcb11ba778e104e70c5648b}\index{Full\_GRASP\_And\_SOLID.BaseStep@{Full\_GRASP\_And\_SOLID.BaseStep}!GetTextToPrint@{GetTextToPrint}}
+\index{GetTextToPrint@{GetTextToPrint}!Full\_GRASP\_And\_SOLID.BaseStep@{Full\_GRASP\_And\_SOLID.BaseStep}}
+\doxysubsubsection{\texorpdfstring{GetTextToPrint()}{GetTextToPrint()}}
+{\footnotesize\ttfamily \label{class_full___g_r_a_s_p___and___s_o_l_i_d_1_1_base_step_a20fded28ddcb11ba778e104e70c5648b} 
+string Full\+\_\+\+GRASP\+\_\+\+And\+\_\+\+SOLID.\+Base\+Step.\+Get\+Text\+To\+Print (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Método abstracto que genera un texto formateado que describe el paso. Este método debe ser implementado por las clases derivadas. 
+
+\begin{DoxyReturn}{Returns}
+Texto que representa el paso.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Library/Base\+Step.\+cs\end{DoxyCompactItemize}
