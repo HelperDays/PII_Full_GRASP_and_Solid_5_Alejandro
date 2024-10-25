@@ -1,0 +1,15 @@
+- Remplace la clase recipe a una clase abstracta Interface
+
+- 
+
+- Ahora string GetTextToPrint() puede ser usado sin problemas ya que IRecipeText lo hace mas flexible al sepáralo de recipe
+
+- 
+
+en Iprinter cambie lo que recibe. En vez de (clase Recipe recipe)ahora Recibe (IRecipeText recipe)
+
+en FilePrinter : IPrinter también cambia lo que recibe. void PrintRecipe(Recipe recipe) a void PrintRecipe(IRecipeText recipe)
+
+en ConsolePrinter : Iprinter también cambie lo que recibe. void PrintRecipe(Recipe recipe) a void PrintRecipe(IRecipeText recipe)
+
+estuve practicando doxygen por eso esta comentado en XML
